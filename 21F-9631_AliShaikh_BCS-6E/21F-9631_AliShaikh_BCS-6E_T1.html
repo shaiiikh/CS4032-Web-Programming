@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .calculator {
+            width: 400px;
+            box-shadow: 0px 0px 10px 0px #000;
+            position: relative;
+        }
+
+        .calculator-screen {
+            width: 100%;
+            height: 80px;
+            border: 2px solid #0f8;
+            background-color: #fff;
+            display: block;
+            font-size: 2em;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 1px;
+            color: #0f8;
+        }
+
+        .key-clear {
+            width: 100px;
+            border: none;
+            height: 85px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: #0f8;
+            color: white;
+            outline: none;
+            cursor: pointer;
+            font-size: 2.5em;
+        }
+
+        .separator-line {
+            width: 100px;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            top: 80px;
+            right: 0;
+        }
+
+        .calculator-keys {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+        }
+
+        .calculator-keys button {
+            height: 80px;
+            border: none;
+            background-color: #0f8;
+            font-size: 2.5em;
+            color: white;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator">
+    <output id="result" class="calculator-screen"></output>
+    <button type="button" class="key-clear">C</button>
+    <div class="separator-line"></div>
+
+    <div class="calculator-keys">
+        <button type="button">1</button>
+        <button type="button">2</button>
+        <button type="button">3</button>
+        <button type="button" class="key-divide">/</button>
+        <button type="button">4</button>
+        <button type="button">5</button>
+        <button type="button">6</button>
+        <button type="button" class="key-multiply">*</button>
+        <button type="button">7</button>
+        <button type="button">8</button>
+        <button type="button">9</button>
+        <button type="button" class="key-subtract">-</button>
+        <button type="button" class="key-zero">0</button>
+        <button type="button" class="key-decimal">.</button>
+        <button type="button" class="key-equals">=</button>
+        <button type="button" class="key-add">+</button>
+    </div>
+</div>
+
+</body>
+</html>

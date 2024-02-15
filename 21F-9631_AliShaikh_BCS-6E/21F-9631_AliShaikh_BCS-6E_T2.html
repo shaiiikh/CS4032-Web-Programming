@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Timetable</title>
+    <style>
+        body, table { background-color: rgb(255, 255, 255); color: black; font-size: large; width: 100%; }
+        table { border-collapse: separate; }
+        th, td, .time-slot, .day { border: 1px solid black; padding: 5px; text-align: center; vertical-align: middle; }
+        .time-slot, .day, h2, .footer, h3 { background-color: #f2f2f2; color: #000000; font-weight: bold; text-align: center; }
+        .day { font-size: xx-large; }
+        .time-slot { font-size: 14px; position: relative; }
+        .time-number { position: absolute; top: 0; left: 0; }
+        .subject, .R, .teacher { text-align: center; }
+        .room, .teacher { font-size: smaller; }
+        .teacher { text-align: right; }
+        .header, .footer { margin-top: -55px; }
+    </style>
+</head>
+<body>
+  <h2 style="text-align: center; margin-bottom: 0;">Department of Computer Science</h2>
+  <h3 style="text-align: center; margin-top: 0; font-weight: bold; font-size: 30px;"><big>BCS-6E</big></h3>
+  <div class="header">
+    <br>
+    <p>FAST-NU CFD CAMPUS</p>
+  </div>
+  <table>
+    <tr>
+      <td class="time-slot"></td>
+      <td class="time-slot"><span class="time-number">1</span>8:45<br>9:15</td>
+      <td class="time-slot"><span class="time-number">2</span>9:15<br>9:45</td>
+      <td class="time-slot"><span class="time-number">3</span>9:45<br>10:10</td>
+      <td class="time-slot"><span class="time-number">4</span>10:15<br>10:45</td>
+      <td class="time-slot"><span class="time-number">5</span>10:45<br>11:15</td>
+      <td class="time-slot"><span class="time-number">6</span>11:15<br>11:40</td>
+      <td class="time-slot"><span class="time-number">7</span>11:45<br>12:15</td>
+      <td class="time-slot"><span class="time-number">8</span>12:15<br>12:45</td>
+      <td class="time-slot"><span class="time-number">9</span>12:45<br>1:10</td>
+      <td class="time-slot"><span class="time-number">10</span>1:10<br>1:45</td>
+      <td class="time-slot"><span class="time-number">11</span>1:45<br>2:15</td>
+      <td class="time-slot"><span class="time-number">12</span>2:15<br>2:45</td>
+      <td class="time-slot"><span class="time-number">13</span>2:45<br>3:10</td>
+      <td class="time-slot"><span class="time-number">14</span>3:15<br>3:45</td>
+      <td class="time-slot"><span class="time-number">15</span>3:45<br>4:15</td>
+      <td class="time-slot"><span class="time-number">16</span>4:15<br>4:40</td>
+    </tr>
+    <tr>
+      <td class="day">Mon</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="3" class="subject"><b>Web Programming</b>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span style="float: left; font-size: smaller;">R-8</span>
+        <div class="teacher">Mr. Mustafa</div>
+      </td>
+      <td colspan="3" class="subject"><b>Parallel and Distributed Computing</b>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span style="float: left; font-size: smaller;">R-9</span>
+        <div class="teacher">Mr. Arshad</div>
+      </td>
+      <td></td>
+      <td colspan="3" class="subject"><b>Artificial Intelligence</b>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span style="float: left; font-size: smaller;">R-13</span>
+        <div class="teacher">Mr. Raza</div>
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </td>
+    </tr>
+    <tr>
+      <td class="day">Tue</td>
+      <td colspan="3" class="subject"><b>Computer Networks</b>
+        <br>
+        <br>
+        <br>
+        <span style="float: left; font-size: smaller;">R-19</span>
+        <div class="teacher">Dr. Umar</div>
+      </td>
+      <td colspan="3" class="subject"><b>Artificial Intelligence</b>
+        <br>
+        <br>
+        <br>
+        <span style="float: left; font-size: smaller;">R-10</span>
+        <div class="teacher">Mr. Raza</div>
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="6" class="subject"><b>Artificial Intelligence Lab</b>
+        <br>
+        <br>
+        <br>
+        <span style="float: left; font-size: smaller;">Lab#1</span>
+        <div class="teacher">Mr. Tabassam</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="day">Wed</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="6" class="subject"><b>Computer Networks-Lab</b>
+        <br>
+        <br>
+        <br>
+        <span style="float: left; font-size: smaller;">Lab#1</span>
+        <div class="teacher">Mr. Hamza</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="day">Thu</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="3" class="subject"><b>Computer Networks</b>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span style="float: left; font-size: smaller;">R-15</span>
+        <div class="teacher">Dr. Umar</div>
+      </td>
+      <td colspan="3" class="subject"><b>Software Design and Analysis</b>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span style="float: left; font-size: smaller;">R-19</span>
+        <div class="teacher">Mr. Azam</div>
+      </td>
+      <td colspan="1"></td>
+      <td colspan="3" class="subject"><b>Web Programming</b>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span style="float: left; font-size: smaller;">Lab#1</span>
+        <div class="teacher">Mr. Mustafa</div>
+      </td>
+      <td colspan="3" class="subject"><b>Parallel and Distributed Computing</b>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span style="float: left; font-size: smaller;">R-19</span>
+        <div class="teacher">Mr. Arshad</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="day">Fri</td>
+      <td></td>
+      <td></td>
+      <td></td>
+
+      <td colspan="3" class="subject"><b>Software Design and Analysis</b>
+        <br>
+        <br>
+        <br>
+        <span style="float: left; font-size: smaller;">R-8</span>
+        <div class="teacher">Mr. Azam</div>
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <div class1="footer">
+    <p>w.e.f January 29, 2024</p>
+  </div>
+  <div class="footer" style="text-align: right;">
+    <p>aSc Timetable</p>
+  </div>
+
+</body>
+</html>
