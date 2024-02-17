@@ -1,0 +1,29 @@
+.box a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+#box1 {
+    background-color: #86cb6b;
+}
+
+#box2 {
+    background-color: #8fd0e0;
+}
+
+#box3 {
+    background-color: #b5b735;
+}
+
+#box4 {
+    background-color: #b5b735;
+}
+
+#box5 {
+    background-color: #d8b0c7;
+}
+
+#box6 {
+    background-color: #d8b0c7;
+}

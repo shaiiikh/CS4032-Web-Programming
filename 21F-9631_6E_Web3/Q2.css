@@ -1,0 +1,18 @@
+.btn-basic {
+    border: none;
+    background-color: #e8e7e89b;
+    box-shadow: none;
+}
+
+.btn-secondary {
+    border: 1px solid #C7C7C7;
+    background-color: rgba(191, 191, 191, 0.395);
+}
+
+.btn-warning {
+    color: white;
+}
+
+.btn-secondary{
+    color: black;
+}
