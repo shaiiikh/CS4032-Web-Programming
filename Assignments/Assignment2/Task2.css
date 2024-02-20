@@ -1,0 +1,52 @@
+/* Style the form container */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style form groups */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Style labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Style input fields */
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style submit button */
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style error messages */
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
