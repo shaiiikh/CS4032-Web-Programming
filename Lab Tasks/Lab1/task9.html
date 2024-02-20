@@ -1,0 +1,96 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-5">
+    <title>Task 9</title>
+    <style>
+        table {
+            margin: auto;
+            padding: 2em;
+        }
+        td {
+            padding: 0 0.1em;
+            vertical-align: top;
+        }
+        input[type="time"]::-webkit-calendar-picker-indicator {
+            display: none;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Pete's Pizza Delivery</h1>
+    <h2 style="text-align: center;">Online Order Form</h2>
+
+    <form method="post" action="">
+        <table>
+            <tr>
+                <td style="text-align: right;"><label for="name">*Name: </label></td>
+                <td><input type="text" name="name" id="name" required></td>
+                <td style="text-align: right;"><label for="tel">*Tel: </label></td>
+                <td><input type="tel" name="tel" id="tel" required></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label for="addr">*Address: </label></td>
+                <td><input type="text" name="addr" id="addr" required></td>
+                <td style="text-align: right;"><label for="mail">*Email: </label></td>
+                <td><input type="email" name="mail" id="mail" required></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label for="town">*Town/city: </label></td>
+                <td><input type="text" name="town" id="town" required></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label for="postalcode">*Postcode: </label></td>
+                <td><input type="text" name="pcode" id="ppstalcode" required></td>
+            </tr>
+        </table>
+
+        <p style="text-align: center;">* required fields</p>
+        <table>
+            <tr>
+                <td>
+                    <h3>Topping</h3>
+                    <label><input type="radio" name="topping" required value="marg"> Margherita</label><br>
+                    <label><input type="radio" name="topping" required value="four"> Four Seasons</label><br>
+                    <label><input type="radio" name="topping" required value="meat"> Meat Feast</label><br>
+                </td>
+                <td>
+                    <h3>Size</h3>
+                    <label><input type="radio" name="base" required value="small"> Small</label><br>
+                    <label><input type="radio" name="base" required value="medium"> Medium</label><br>
+                    <label><input type="radio" name="base" required value="large"> Large</label><br>
+                </td>
+                <td>
+                    <h3>Extras</h3>
+                    <label><input type="checkbox" name="extra_mu" value="mushrooms"> Mushrooms</label><br>
+                    <label><input type="checkbox" name="extra_peppers" value="green peppers"> Green peppers</label><br>
+                    <label><input type="checkbox" name="extra_anchovies" value="Anchovies"> Anchovies</label><br>
+                    <label><input type="checkbox" name="extra_cheese" value="extra cheese"> Extra cheese</label><br>
+                </td>
+
+            </tr>
+        </table>
+
+
+        <br>
+
+        <table>
+            <tr>
+                <td style="text-align: right;"><label for="del">Preferred delivery time: </label></td>
+                <td><input type="time" name="del" id="del" required></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label for="instr">Delivery instructions: </label></td>
+                <td><textarea name="instr" id="instr"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><br><button>Submit order</button></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
