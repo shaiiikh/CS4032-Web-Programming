@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+h2 {
+    margin-top: 0; 
+}
+
+#my-table {
+    border-collapse: collapse;
+}
+
+#my-table th, #my-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+#my-table th {
+    background-color: orange;
+    color: white;
+}
+
+.remove-row {
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.remove-row:hover {
+    background-color: #FF8C00; 
+}

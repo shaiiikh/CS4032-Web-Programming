@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task4</title>
+    <link rel="stylesheet" type="text/css" href="Task4.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.remove-row').on('click', function(){
+                $(this).closest('tr').remove();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <h1>Remove Table Row</h1>
+
+    <table id="my-table">
+        <tr>
+            <th>Name</th>
+            <th>CGPA</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Muhammad</td>
+            <td>2.5</td>
+            <td><button class="remove-row">Remove</button></td>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>2.8</td>
+            <td><button class="remove-row">Remove</button></td>
+        </tr>
+        <tr>
+            <td>Shaikh</td>
+            <td>2.2</td>
+            <td><button class="remove-row">Remove</button></td>
+        </tr>
+    </table>
+
+</body>
+</html>
