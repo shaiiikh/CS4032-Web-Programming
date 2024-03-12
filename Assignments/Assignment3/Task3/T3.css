@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.clock {
+    display: flex;
+}
+
+.box {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 0 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    font-size: 3em;
+    margin: 0 10px;
+    color: #333;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#hours {
+    color: blue;
+}
+
+#minutes {
+    color: green;
+}
+
+#seconds {
+    color: red;
+}
+
+#ampm {
+    color: purple;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+    }
+    100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+    }
+}
